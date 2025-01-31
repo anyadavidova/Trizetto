@@ -1,6 +1,6 @@
 name: Custom GitHub Actions
-run-name: ${{ github.action }} is running ${{ github. }}
-on: [push, workflow_dispatch]
+run-name: ${{ github.actor }} is running ${{ github.action }}
+on: [workflow_dispatch]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
