@@ -1,0 +1,11 @@
+name: Custom GitHub Actions
+run-name: ${{ github.actor }} is testing out GitHub Actions
+on: [push, workflow_dispatch]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
